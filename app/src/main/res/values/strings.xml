@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">白兔监控</string>
+    <string name="start_connect_video">开始连接</string>
+    <string name="start_transfer_video">开始传输</string>
+</resources>

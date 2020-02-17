@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/server_setting"
+        android:icon="@mipmap/server"
+        android:orderInCategory="100"
+        android:title="服务器配置"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/choose_authority"
+        android:icon="@mipmap/authority"
+        android:orderInCategory="100"
+        android:title="权限选择"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/device_info"
+        android:icon="@mipmap/device_info"
+        android:orderInCategory="100"
+        android:title="本机信息"
+        app:showAsAction="never"/>
+
+</menu>

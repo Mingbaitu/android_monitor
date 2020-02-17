@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".sendVideo_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <!--用于显示预览-->
+        <VideoView
+            android:id="@+id/preview_history_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5.0"
+            android:background="@mipmap/pink_bg"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/take_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="选择视频"
+                android:color="@android:color/transparent"
+
+                android:background="@drawable/take_video_selector"/>
+            <Button
+                android:id="@+id/connect_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:text="开始连接"
+                android:background="@drawable/take_video_selector"/>
+            <Button
+                android:id="@+id/upload_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:text="上传视频"
+                android:background="@drawable/take_video_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
